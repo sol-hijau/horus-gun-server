@@ -1,0 +1,11 @@
+name = "horus-gun-server"
+compatibility_date = "2024-01-01"
+main = "horus-gun-server.js"
+compatibility_flags = ["nodejs_compat"]
+
+[[durable_objects]]
+binding = "HORUS_GUN_SERVER"
+class_name = "HorusGunServer"
+
+[[migrations]]
+tag = "v1"
