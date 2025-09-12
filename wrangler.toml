@@ -1,4 +1,4 @@
-name = "horus-gun-server"
+name = "horus"
 compatibility_date = "2024-01-01"
 main = "horus-gun-server.js"
 compatibility_flags = ["nodejs_compat"]
@@ -10,3 +10,12 @@ bindings = [
 
 [[migrations]]
 tag = "v1"
+new_classes = ["HorusGunServer"]
+
+[[migrations]]
+tag = "v2"
+new_classes = ["HorusGunServer"]
+
+[[migrations]]
+tag = "v3" 
+new_classes = ["HorusGunServer"]
