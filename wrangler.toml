@@ -5,17 +5,10 @@ compatibility_flags = ["nodejs_compat"]
 
 [durable_objects]
 bindings = [
-  { name = "HORUS_GUN_SERVER", class_name = "HorusGunServer" }
+  { name = "HORUS_GUN_ADMIN", class_name = "HorusGunAdmin" },
+  { name = "HORUS_GUN_PLATFORM", class_name = "HorusGunPlatform" }
 ]
 
 [[migrations]]
 tag = "v1"
-new_classes = ["HorusGunServer"]
-
-[[migrations]]
-tag = "v2"
-new_classes = ["HorusGunServer"]
-
-[[migrations]]
-tag = "v3" 
-new_classes = ["HorusGunServer"]
+new_classes = ["HorusGunAdmin", "HorusGunPlatform"]
